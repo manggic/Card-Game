@@ -1,0 +1,92 @@
+
+.container-fluid{
+   width: 100%;
+}
+
+
+.header{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    height : 70px;
+    background-color:rgb(54, 21, 21);
+}
+
+.heading{
+    color: brown;
+}
+
+button{
+    width: 82%;
+}
+
+.table{
+    width: 300px;
+}
+
+.pressBtn{
+    width: 100px;
+    height: 100px;
+     position: absolute;
+     left: 38%;
+     top: 34%;
+     z-index: 2;
+     /* display: none;  */
+}
+
+.cards{
+    position: relative;
+}
+
+.card{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    box-shadow: 2px 4px 8px yellow;
+    border: 2px solid black;
+    background-color: coral;
+    height: 170px;
+    width: 170px;
+}
+
+.left-body{
+    height: 530px; 
+}
+
+body{
+    background-color: grey;
+}
+
+/* .arrow{
+    position: absolute  !important;
+     z-index: 2 !important;
+     transform: rotate(55deg) !important;
+     font-size: 100px !important;
+     left: 54%; 
+     top: 23%;
+        animation: rotate 60s infinite linear;
+} */
+
+.arrow{
+    background: #000;
+    height: 30%;
+    left: 49%;
+    position: absolute;
+    top: 20%;
+    transform-origin: 50% 100%;
+    width: 2%;
+    z-index:1;
+    animation-play-state: paused;
+}
+
+.arrowRun{
+    animation: rotate 4s infinite linear;
+
+}
+
+@keyframes rotate {    
+    100%{
+        transform: rotate(360deg);
+    }
+  }
