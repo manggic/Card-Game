@@ -31,7 +31,6 @@ button{
      left: 38%;
      top: 34%;
      z-index: 2;
-     /* display: none;  */
 }
 
 .cards{
@@ -58,15 +57,6 @@ body{
     background-color: grey;
 }
 
-/* .arrow{
-    position: absolute  !important;
-     z-index: 2 !important;
-     transform: rotate(55deg) !important;
-     font-size: 100px !important;
-     left: 54%; 
-     top: 23%;
-        animation: rotate 60s infinite linear;
-} */
 
 .arrow{
     background: #000;
@@ -81,7 +71,7 @@ body{
 }
 
 .arrowRun{
-    animation: rotate 4s infinite linear;
+    animation: rotate 1s infinite linear;
 
 }
 
@@ -90,3 +80,12 @@ body{
         transform: rotate(360deg);
     }
   }
+
+
+
+
+
+
+
+
+  
