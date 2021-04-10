@@ -13,18 +13,25 @@ function yourTurn() {
   document.getElementsByClassName(
     `${currentPlayer}Btn`
   )[0].style.backgroundColor = "red";
+
+   console.log('currentPlayer', currentPlayer);
+   if(currentPlayer === 'bot'){
+       setTimeout( ()=> startRolling('bot')     , 1000 )
+   }
 }
 
 yourTurn();
 
 // will start rolling on Your Start button click 
 function startRolling(name) {
-    console.log("current : ", name);
+    //console.log("current : ", name);
     let arrow;
   if (name === "player") {
      arrow = document.getElementById("playerArrow");
     console.log("arrow", arrow);
   } else {
+
+    setTimeout(()=> pressClicked('bot')  , 2000)
      arrow = document.getElementById("botArrow");
     console.log("arrow", arrow);
   }
