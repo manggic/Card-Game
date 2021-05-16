@@ -1,100 +1,88 @@
-
-.container-fluid{
-   width: 100%;
+.container-fluid {
+  width: 100%;
 }
 
-
-.header{
-    font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    height : 70px;
-    background-color:rgb(54, 21, 21);
+.header {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  height: 70px;
+  background-color: rgb(54, 21, 21);
 }
 
-
-.Disabled{
-    pointer-events: none;
-    cursor: not-allowed;
-    filter: alpha(opacity=65);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}  
-
-.heading{
-    color: brown;
+.Disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
-button{
-    width: 82%;
+.heading {
+  color: chartreuse;
 }
 
-.table{
-    width: 300px;
+button {
+  width: 82%;
 }
 
-.pressBtn{
-    width: 100px;
-    height: 100px;
-     position: absolute;
-     left: 38%;
-     top: 34%;
-     z-index: 2;
+.table {
+  width: 300px;
 }
 
-.cards{
-    position: relative;
+.pressBtn {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 38%;
+  top: 34%;
+  z-index: 2;
 }
 
-.card{
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items:center ;
-    box-shadow: 2px 4px 8px yellow;
-    border: 2px solid black;
-    background-color: coral;
-    height: 170px;
-    width: 170px;
+.cards {
+  position: relative;
 }
 
-.left-body{
-    height: 530px; 
+.card {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  background-color: antiquewhite;
+  height: 170px;
+  width: 170px;
 }
 
-body{
-    background-color: grey;
+.left-body {
+  height: 530px;
 }
 
-
-.arrow{
-    background: #000;
-    height: 30%;
-    left: 49%;
-    position: absolute;
-    top: 20%;
-    transform-origin: 50% 100%;
-    width: 2%;
-    z-index:1;
-    animation-play-state: paused;
+body {
+  background-color: grey;
 }
 
-.arrowRun{
-    animation: rotate 1s infinite linear;
-
+.arrow {
+  background: #000;
+  height: 30%;
+  left: 49%;
+  position: absolute;
+  top: 20%;
+  transform-origin: 50% 100%;
+  width: 2%;
+  z-index: 1;
+  animation-play-state: paused;
+}
+.show {
+  display: none;
 }
 
-@keyframes rotate {    
-    100%{
-        transform: rotate(360deg);
-    }
+.arrowRun {
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
   }
-
-
-
-
-
-
-
-
-  
+}
