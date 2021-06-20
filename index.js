@@ -18,7 +18,7 @@ function yourTurn() {
 }
 
 function replay() {
-   currentScore = 1;
+  currentScore = 1;
 
   currentPlayer = "player";
   playerTurnsOver = false;
@@ -39,10 +39,9 @@ function replay() {
   document.getElementById("botTotal").innerHTML = "0";
   document.getElementById("botArrow").classList.remove("arrowRun");
 
-  for(let i=5;i<=8;i++){
-        document.getElementById(`${i}`).innerHTML = '' 
+  for (let i = 5; i <= 8; i++) {
+    document.getElementById(`${i}`).innerHTML = "";
   }
-
 }
 
 yourTurn();
@@ -178,21 +177,20 @@ function pressClicked(name) {
       playerTurnsOver = false;
       botTurnsOver = false;
     }
+    let playerTotalScore = playerScores.reduce(
+      (initial, score) => (initial += score),
+      0
+    );
+
+    let botTotalScore = botScores.reduce(
+      (initial, score) => (initial += score),
+      0
+    );
+
+    document.getElementById("playerTotal").innerHTML = playerTotalScore;
+    document.getElementById("botTotal").innerHTML = botTotalScore;
 
     if (currentScore === 6) {
-      let playerTotalScore = playerScores.reduce(
-        (initial, score) => (initial += score),
-        0
-      );
-
-      let botTotalScore = botScores.reduce(
-        (initial, score) => (initial += score),
-        0
-      );
-
-      document.getElementById("playerTotal").innerHTML = playerTotalScore;
-      document.getElementById("botTotal").innerHTML = botTotalScore;
-
       document.getElementsByClassName("playerBtn")[0].disabled = true;
       document.getElementsByClassName("botBtn")[0].disabled = true;
 
@@ -201,9 +199,9 @@ function pressClicked(name) {
         : (document.getElementById("winner").innerHTML = "BOT WINS !!!");
       document.getElementById("show").classList.remove("show");
       document.getElementById("botArrow").classList.remove("arrowRun");
-      for(let i=5;i<=8;i++){
-        document.getElementById(`${i}`).innerHTML = '' 
-  }
+      for (let i = 5; i <= 8; i++) {
+        document.getElementById(`${i}`).innerHTML = "";
+      }
     }
   }
 }
